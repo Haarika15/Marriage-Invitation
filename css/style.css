@@ -66,9 +66,12 @@ h1 {
 }
 
 .couple-names {
-    font-family: 'Great Vibes', cursive;
-    font-size: 38px;
-    color: #a83b68;
+   font-family: 'Great Vibes', cursive;
+    font-size: 52px;
+    font-weight: normal;
+    color: #87364B;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 3px rgba(135, 54, 75, 0.15);
 }
 
 .couple-names span {
