@@ -1,0 +1,230 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffe0eb,
+        #fff5f7,
+        #fce4ec
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    background: rgba(255,255,255,0.92);
+
+    padding: 40px 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(200, 80, 120, 0.15);
+
+    border: 1px solid #ffe0eb;
+}
+
+/* Heading */
+
+.heart {
+    font-size: 40px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.subtitle {
+    color: #bd6685;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #c44573;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.couple-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #a83b68;
+}
+
+.couple-names span {
+    color: #e98ba9;
+}
+
+/* Couple Image */
+
+.photo-container {
+    margin: 25px auto;
+}
+
+.couple-photo {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #f8c5d6;
+
+    box-shadow: 0 5px 20px #e9a3bb;
+}
+
+/* Wedding Details */
+
+h2 {
+    color: #b84370;
+    font-size: 21px;
+    margin: 20px 0 10px;
+}
+
+.wedding-date {
+    color: #8f5269;
+    font-size: 15px;
+}
+
+/* Countdown */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.time-box {
+    background: linear-gradient(135deg, #f8c4d5, #ffe5ed);
+
+    padding: 18px 10px;
+
+    min-width: 105px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 12px #d98ba733;
+}
+
+.time-box span {
+    display: block;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #b53668;
+}
+
+.time-box small {
+    font-size: 12px;
+    color: #8f5269;
+}
+
+/* Love Message */
+
+#countdown-message {
+    color: #c44573;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.divider {
+    color: #e98ba9;
+    margin: 25px;
+    letter-spacing: 10px;
+}
+
+.love-message {
+    font-size: 15px;
+    color: #805064;
+    line-height: 1.8;
+}
+
+.footer-message {
+    margin-top: 15px;
+    color: #c44573;
+    font-weight: 500;
+}
+
+.floating-hearts {
+    font-size: 25px;
+    margin-top: 25px;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Animations */
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .couple-names {
+        font-size: 32px;
+    }
+
+    .couple-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .time-box {
+        min-width: 75px;
+        padding: 12px 7px;
+    }
+
+    .time-box span {
+        font-size: 25px;
+    }
+}
